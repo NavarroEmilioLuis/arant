@@ -1,0 +1,142 @@
+img {
+  max-height: 500px;
+}
+
+div.container {
+  display: flex;
+}
+
+div.main {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#logo {
+  animation: loading 5s ease-in-out infinite alternate;
+}
+
+@keyframes loading {
+  0% {
+    transform: rotate(0deg) scale(1);
+  }
+  80% {
+    transform: rotate(360deg) scale(1);
+  }
+  90% {
+    transform: rotate(360deg) scale(1.1);
+  }
+  100% {
+    transform: rotate(360deg) scale(1);
+  }
+}
+
+
+#r {
+  animation: move-and-shrink 5s ease-in-out infinite alternate;
+}
+
+@keyframes move-and-shrink {
+  0% {
+    transform: translate(0, 0) scale(1);
+  }
+  10% {
+    transform: translate(0, -140px) scale(1);
+  }
+  30% {
+    transform: translate(0, -140px) scale(1);
+  }
+  60% {
+    transform: translate(70px, -140px) scale(1);
+  }
+  70% {
+    transform: translate(110px, 20px) scale(0.75);
+  }
+  100% {
+    transform: translate(110px, 20px) scale(0.75);
+  }
+}
+
+#e {
+  animation: move-and-flip 5s ease-in-out infinite alternate;
+}
+
+@keyframes move-and-flip {
+  0% {
+    transform: translate(0, 0) rotateX(0) rotateY(0);
+  }
+  15% {
+    transform: translate(-10px, 10px) rotateX(0) rotateY(0);
+  }
+  35% {
+    transform: translate(-50px, 180px) rotateX(180deg) rotateY(0);
+  }
+  50% {
+    transform: translate(70px, 180px) rotateX(180deg) rotateY(0);
+  }
+  60% {
+    transform: translate(100px, 40px) rotateX(180deg) rotateY(180deg);
+  }
+  100% {
+    transform: translate(100px, 40px) rotateX(180deg) rotateY(180deg);
+  }
+}
+
+#a {
+  animation: move-left 5s ease-in-out infinite alternate;
+}
+
+@keyframes move-left {
+  0% {
+    transform: translate(0, 0);
+  }
+  20% {
+    transform: translate(0, 0);
+  }
+  35% {
+    transform: translate(-40px, 0);
+  }
+  60% {
+    transform: translate(-302px, 0);
+  }
+  100% {
+    transform: translate(-302px, 0);
+  }
+}
+
+#c {
+  animation: rotate-right 5s ease-in-out infinite alternate;
+}
+
+@keyframes rotate-right {
+  0% {
+    transform: rotateZ(0) translate(0);
+  }
+  60% {
+    transform: rotateZ(90deg) translate(15px, -15px);
+  }
+  100% {
+    transform: rotateZ(90deg) translate(15px, -15px);
+  }
+}
+
+#t {
+  animation: idle 5s ease-in-out infinite alternate;
+}
+
+@keyframes idle {
+  0% {
+    transform: skew(0);
+  }
+  30% {
+    transform: skew(0);
+  }
+  60% {
+    transform: skew(12deg, 12deg);
+  }
+  100% {
+    transform: skew(0);
+  }
+}
